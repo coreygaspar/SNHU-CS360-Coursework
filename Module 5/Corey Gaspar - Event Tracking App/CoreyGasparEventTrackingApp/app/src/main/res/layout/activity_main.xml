@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvEventTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Tracker"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#0D62D0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEventTitle" />
+
+    <Button
+        android:id="@+id/btnAddEvent"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:text="Add Event"
+        android:textColor="#FFFFFF"
+        android:background="#0C61CE"
+        app:layout_constraintTop_toBottomOf="@id/calendarView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvNoEvents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No events to display."
+        android:textSize="16sp"
+        android:textColor="#888888"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/btnAddEvent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewEvents"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAddEvent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:itemCount="9" />
+</androidx.constraintlayout.widget.ConstraintLayout>
