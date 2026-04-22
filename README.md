@@ -14,4 +14,13 @@ The app included a login screen that allowed users to create an account and sign
 I approached the process of coding the app step by step, focusing on one feature at a time instead of everything at once. I started with creating the UI elements for each screen, then created the databases to store login credentials and event data, and then finally created code to connect everything together like the login, event management, and navigation. One technique I used was testing frequently while I built the app. I would first test the page on its own to make sure it wouldn't crash. Then, I would test the connection when switching screens to make sure it didn't crash either. Then, I tested the features to make sure that they worked as required. These strategies can be used in future projects by making development more organized and easier to manage. Building one feature at a time and testing often helps prevent bigger problems and makes it easier to fix issues as they occur.
 
 ---
-### 
+### How did you test to ensure your code was functional? Why is this process important, and what did it reveal?
+I tested my app by running it frequently and testing each core feature as I built it. I made sure that things like adding events, viewing them, updating, deleting, and moving between screens all worked as intended. This process is important because it helps catch mistakes early and makes sure that the app works properly. It also helped me discover missing connections between parts of the app, which helped to fix issues like the app crashing on startup.
+
+---
+### Consider the full app design and development process from initial planning to finalization. Where did you have to innovate to overcome a challenge?
+As mentioned, a challenge I ran into was connecting all of the different parts of the app together, especially liking the UI screens with the database. I had to figure out how to pass data between activities and make sure updates showed correctly on the main screen. To overcome this, I adjusted my approach by testing each feature step by step and fixing issues as they came up instead of waiting until the end. This helped me keep the app working while I built it and made the final result more stable.
+
+---
+### In what specific component of your mobile app were you particularly successful in demonstrating your knowledge, skills, and experience?
+I was most successful in the event management system, especially with adding, viewing, updating, and deleting events. This part of the app showed my understanding of how to connect the UI with the database and handle user input. It also showed how I was able to manage multiple components working together, like activities, buttons, and SQLite. Getting this part to work smoothly made the app fully functional and showed my skills in both design and development.
